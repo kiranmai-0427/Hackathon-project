@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Products - HasthKargh</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body onload="renderListing()">
+<header>
+  <div class="logo">HasthKargh</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">All Products</a>
+  </nav>
+  <div class="right">
+    <a href="wishlist.html">Wishlist</a>
+    <a href="cart.html">Cart</a>
+    <a href="login.html">Login</a>
+  </div>
+</header>
+
+<div class="layout">
+  <h2>All Handloom Products</h2>
+  <div style="margin:10px 0;">
+    <input id="search" type="text" placeholder="Search products..." onkeyup="renderListing()">
+    <select id="catFilter" onchange="renderListing()">
+      <option value="All">All Categories</option>
+      <option value="Sarees">Sarees</option>
+      <option value="Dupattas">Dupattas</option>
+      <option value="Kurtas">Kurtas</option>
+      <option value="Shawls">Shawls</option>
+      <option value="Carpets">Carpets</option>
+      <option value="Bedsheets">Bedsheets</option>
+    </select>
+    <select id="sort" onchange="renderListing()">
+      <option value="none">Sort</option>
+      <option value="low">Price: Low to High</option>
+      <option value="high">Price: High to Low</option>
+    </select>
+  </div>
+  <div class="products-grid" id="all-products"></div>
+</div>
+
+<div class="footer">© 2025 HasthKargh Handloom Store</div>
+</body>
+</html>

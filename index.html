@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HasthKargh - Handloom Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body onload="renderHome()">
+<header>
+  <div class="logo">HasthKargh</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">All Products</a>
+  </nav>
+  <div class="right">
+    <a href="wishlist.html">Wishlist</a>
+    <a href="cart.html">Cart</a>
+    <a href="login.html">Login</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Authentic Indian Handloom, Woven With Love.</h1>
+    <p>Now showcasing your real saree photos along with other handloom products.</p>
+    <a href="products.html" class="btn-primary">Shop All Products</a>
+  </div>
+  <div class="hero-img">
+    <img src="hero.jpg" alt="HasthKargh banner">
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-title">Shop by Category</div>
+  <div class="categories">
+    <span class="chip" onclick="location.href='products.html'">All</span>
+    <span class="chip" onclick="location.href='products.html#Sarees'">Sarees</span>
+    <span class="chip" onclick="location.href='products.html#Dupattas'">Dupattas</span>
+    <span class="chip" onclick="location.href='products.html#Kurtas'">Kurtas</span>
+    <span class="chip" onclick="location.href='products.html#Shawls'">Shawls</span>
+    <span class="chip" onclick="location.href='products.html#Carpets'">Carpets</span>
+    <span class="chip" onclick="location.href='products.html#Bedsheets'">Bedsheets</span>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-title">Featured Products</div>
+  <div class="products-grid" id="featured-products"></div>
+</section>
+
+<div class="footer">© 2025 HasthKargh Handloom Store</div>
+</body>
+</html>
